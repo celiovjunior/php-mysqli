@@ -43,6 +43,9 @@
                     case "list":
                         include("all-users.php");
                         break;
+                    case "edit":
+                        include("edit-user.php");
+                        break;
                     case "register":
                         include("register-user.php");
                         break;
