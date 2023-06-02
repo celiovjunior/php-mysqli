@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col mt-5">
                 <?php
-                include('./config/database/connection.php');
+                include('./config/database/conn.php');
                 switch (@$_REQUEST["page"]) {
                     case "new":
                         include("new-user.php");

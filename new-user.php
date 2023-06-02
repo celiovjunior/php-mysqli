@@ -1,5 +1,6 @@
 <h1>New user:</h1>
 <form action="?page=register" method="POST">
+    <input type="hidden" name="action" value="create">
     <div class="mb-3">
         <label for="full_name">Full name</label>
         <input type="text" name="full_name" id="" class="form-control">
