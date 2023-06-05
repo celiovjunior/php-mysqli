@@ -22,7 +22,7 @@ if ($qtd > 0) {
         print "<td>".$row->full_name."</td>";
         print "<td>".$row->email."</td>";
         print "<td>".$row->date_of_birth."</td>";
-        print "<td><button onclick=\"location.href='?page=edit&id=".$row->id.".'\" class='btn btn-success'>Edit</button> <button class='btn btn-danger'>Delete</button></td>";
+        print "<td><button onclick=\"location.href='?page=edit&id=".$row->id.".'\" class='btn btn-success'>Edit</button> <button onclick=\"if(confirm('Are you sure you want to DELETE?')){location.href='?page=register&action=delete&id=".$row->id."'}else{false;}\" class='btn btn-danger'>Delete</button></td>";
         print "</tr>";
     }
     print "</table>";
