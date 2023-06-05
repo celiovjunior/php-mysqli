@@ -7,7 +7,7 @@ $result = $conn->query($sql);
 $qtd = $result->num_rows;
 
 if ($qtd > 0) {
-    print "<table class='table table-hover table-striped'>";
+    print "<table class='table table-hover table-striped table-bordered'>";
     print "<tr>";
     print "<th>#</th>";
     print "<th>Name</th>";
@@ -27,7 +27,7 @@ if ($qtd > 0) {
     }
     print "</table>";
 } else {
-    print "<p class='alert alert-danger'>Nenhum resultado.</p>";
+    print "<p class='alert alert-danger'>Nothing registered.</p>";
 }
 
 ?>

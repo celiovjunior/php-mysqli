@@ -9,7 +9,7 @@
 
 <form action="?page=register" method="POST">
     <!-- hide input -->
-    <input type="hidden" name="action" value="edit">
+    <input type="hidden" name="action" value="update">
     <input type="hidden" name="id" value="<?php print $row->id; ?>">
     
     <div class="mb-3">
@@ -25,6 +25,6 @@
         <input type="date" name="date_of_birth" id="" value="<?php print $row->date_of_birth ?>" class="form-control">
     </div>
     <div class="mb-3">
-        <input type="submit" class="btn btn-primary" value="Register">
+        <input type="submit" class="btn btn-primary" value="Update">
     </div>
 </form>

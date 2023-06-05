@@ -20,7 +20,19 @@ switch ($_REQUEST['action']) {
 
         break;
     case 'update':
-        # code...
+        $full_name = $_POST['full_name'];
+        $email = $_POST['email'];
+        $date_of_birth = $_POST['date_of_birth'];
+
+        $sql = "UPDATE users SET email = '{$email}', full_name = '{$full_name}', date_of_birth = '{$date_of_birth}' WHERE id=".$_REQUEST["id"];
+
+        $result = $conn->query($sql);
+
+        if ($result==true) {
+            print "<script>alert('user updated successfully');location.href='?page=list'</script>";
+        } else {
+            print "<script>alert('error when update the user');location.href='?page=list'</script>";
+        }
         break;
     case 'delete':
         # code...
